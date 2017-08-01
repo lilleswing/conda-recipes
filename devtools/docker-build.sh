@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 set -x
+conda update -n root conda-build
 conda config --add channels omnia
 # Move the conda-forge channel to the top
 # Cannot just append omnia otherwise default would have higher priority
